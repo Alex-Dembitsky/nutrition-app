@@ -1,0 +1,54 @@
+
+// npm externals
+
+@import "../../../node_modules/include-media/dist/include-media";
+
+
+// base utils
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/helpers";
+
+
+// base styles
+
+@import "general/normalize";
+@import "general/fonts";
+@import "general/icon-fonts";
+@import "general/base";
+@import "general/typography";
+@import "general/buttons";
+@import "general/forms";
+
+$breakpoints: (
+  'phone-l': 640px,
+  'tablet': 769px,
+  'desktop': 1024px,
+  'desktop-m': 1200px,
+  'desktop-l': 1440px
+);
+
+
+// local vendor libraries
+
+// @import "vendors/examples";
+
+
+// layout
+
+@import "layout/global";
+@import "layout/header";
+
+
+// sections
+
+@import "pages/intro";
+@import "pages/facts";
+@import "pages/ingredients";
+@import "pages/packaging";
+@import "pages/ways";
+
+// components
+
+@import "components/custom-select";

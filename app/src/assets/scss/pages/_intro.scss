@@ -1,0 +1,442 @@
+$green: #00DC92;
+$blue: #06C1F8;
+$red: #F54370;
+$yellow: #FFBA00;
+$white: #eaf9ff;
+
+// scaling... any units
+$width: 60px;
+
+.intro {
+	text-align: center;
+	font-size: $font-size-xl;
+	background: $bg-color;
+	position: relative;
+	&.skrollable-before {
+		.images-section {
+			position: fixed;
+		}
+	}
+	&.skrollable-between {
+		.images-section {
+			position: absolute;
+			top: auto !important;
+			left: 0 !important;
+			right: 0 !important;
+			bottom: 0 !important;
+		}
+	}
+	.images-section {
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		right: 0;
+		z-index: 10;
+		pointer-events: none;
+		&.shadows {
+			z-index: 1;
+			p {
+				visibility: hidden;
+			}
+		}
+		[class*="product"] {
+			position: absolute;
+			img {
+				transform-origin: 0 0;
+				position: relative;
+			}
+		}
+		.product-1 {
+			top: 0;
+			left: 21%;
+			transform: translateY(-15%);
+		}
+		.product-2 {
+			top: 75%;
+			left: 20%;
+		}
+		.product-3 {
+			top: 100%;
+			max-width: 500px;
+			width: 90%;
+			left: 50%;
+			transform: translate(-50%, -40%);
+			max-height: 80vh;
+			img {
+				transform-origin: 50% 100%;
+				position: relative;
+				left: 100%;
+				max-height: 60vh;
+			}
+
+			p{
+				position: absolute;
+				top: 250%;
+			}
+		}
+		.product-4 {
+			top: 18%;
+			left: 0;
+			transform: translateX(-50%);
+		}
+		.product-5 {
+			top: 0;
+			right: 0;
+			transform: translateY(-30%);
+			img {
+				transform-origin: 100% 0;
+			}
+		}
+		.mobile-device & {
+			height: 100vh;
+			z-index: 2;
+			min-height: 450px;
+			position: absolute;
+			&.shadows {
+				z-index: 1;
+			}
+			.product-3 {
+				display: none;
+				img {
+					left: 50%;
+				}
+				p {
+					display: none;
+				}
+			}
+		}
+
+		.skrollr-desktop &{
+			.product-3 p{
+				position: static;
+			}
+		}
+	}
+	&.skrollable-between {
+		.images-section {
+			pointer-events: auto;
+		}
+	}
+	.product-intro,
+	.intro-text,
+	.landing-block {
+		position: relative;
+		z-index: 3;
+		min-height: 100vh;
+		z-index: 3;
+	}
+	.product-intro {
+		min-height: calc(100vh - 86px);
+		@media (max-width: 768px) {
+			min-height: 75vh;
+		}
+		.text-block {
+			display: none;
+		}
+		.mobile-device & {
+			.text-block {
+				display: block;
+			}
+			img {
+				max-height: 60vh;
+			}
+			z-index: 15;
+			background: $bg-color;
+			&:before {
+				display: none;
+			}
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
+			height: $header-height/2;
+			background: $bg-color;
+		}
+	}
+	.text-block {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 1200px;
+		max-width: 90%;
+	}
+	.intro-text {
+		h2 {
+			font-size: 64px;
+			line-height: 72px;
+		}
+		.text-block {
+			width: 800px;
+		}
+		.mobile-device & {
+			min-height: 0;
+			padding: 50px;
+			.text-block {
+				position: static;
+				transform: none;
+				width: auto;
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+	}
+	h1 {
+		font-size: 120px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	.link {
+		position: fixed;
+		left: 50%;
+		bottom: 50px;
+		transform: translateX(-50%);
+		text-transform: uppercase;
+		font-size: 20px;
+		letter-spacing: 2px;
+		font-weight: $font-weight-semibold;
+		white-space: nowrap;
+		pointer-events: none;
+		transition: opacity 0.3s;
+		.scroll{
+			position:absolute;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			transition: opacity 1s linear;
+		}
+
+		.loading & {
+			.hold{
+				&:after{
+					opacity: 0;
+				}
+			}
+		}
+		.loading-complete & {
+			.hold{
+				.scroll{
+					opacity: 1;
+				}
+
+				&:after{
+					opacity: 1;
+				}
+				.loading{
+					opacity: 0;
+					transition: opacity 1s linear;
+				}
+			}
+			.loader{
+				opacity: 0;
+			}
+		}
+		.hold{
+			position: relative;
+			&:after {
+				content: '';
+				width: 68px;
+				height: 29px;
+				background: url(../images/btn/arrow/down-big.png) no-repeat;
+				background-size: 100% 100%;
+				display: block;
+				margin: 30px auto 0;
+				transition: opacity 1s linear;
+			}
+		}
+
+		.loader {
+		  position: absolute;
+		  bottom: 0;
+		  left: 50%;
+		  transform: translateX(-50%);
+		  width: $width;
+		  transition: opacity 1s linear;
+		  &:before {
+		    content: '';
+		    display: block;
+		    padding-top: 100%;
+		  }
+		}
+		.circular {
+		  animation: rotate 2s linear infinite;
+		  height: 100%;
+		  transform-origin: center center;
+		  width: 100%;
+		  position: absolute;
+		  top: 0;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  margin: auto;
+		}
+
+		.path {
+		  stroke-dasharray: 1, 200;
+		  stroke-dashoffset: 0;
+		  animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+		  stroke-linecap: round;
+		}
+		
+		.mobile-device & {
+			position: absolute;
+			bottom: 80px;
+			display: none;
+		}
+	}
+
+	@include media('<desktop-m') {
+		.intro-text {
+			h2 {
+				font-size: 48px;
+				line-height: 54px;
+			}
+			.text-block {
+				width: 500px;
+			}
+		}
+		h1 {
+			font-size: 90px;
+		}
+		.images-section {
+			[class*="product"] img {
+				transform: scale(0.75);
+			}
+		}
+	}
+	@include media('>=desktop-m', 'height<800px') {
+		.images-section {
+			[class*="product"] img {
+				transform: scale(0.8);
+			}
+		}
+	}
+	@include media('<desktop') {
+		font-size: $font-size-l;
+		h2,
+		.intro-text h2 {
+			font-size: 30px;
+			line-height: 1.2;
+		}
+		h1 {
+			font-size: 60px;
+		}
+	}
+	@include media('<tablet') {
+		font-size: $base-font-size;
+		.images-section {
+			[class*="product"] img {
+				transform: scale(0.43);
+			}
+			.product-1 {
+				left: 0;
+			}
+			.product-2 {
+				left: auto;
+				right: -30%;
+				top: 65%;
+			}
+			.product-3 {
+				top: 100%;
+				right: 0;
+				.mobile-device & {
+					img {
+						top: -150px;
+						left: 30%;
+					}
+				}
+			}
+			.product-4 {
+				top: 30%;
+				//left: -15%;
+				transform: translateX(-20%);
+			}
+			.product-5 {
+				top: 0;
+				right: 0;
+			}
+		}
+		h2,
+		.intro-text h2 {
+			font-size: 24px;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		span.link {
+			font-size: 14px;
+			&:after {
+				width: 35px;
+				height: 15px;
+				margin-top: 10px;
+			}
+		}
+	}
+	.mobile-device & {
+		z-index: 30; // should be higher than header
+		.intro-text .link {
+			display: none;
+		}
+	}
+	@include media('height<320px') {
+		span.link {
+			display: none;
+		}
+	}
+	@include media('height<450px') {
+		.product-2 {
+			left: 65% !important;
+			top: 65px;
+		}
+	}
+}
+
+.loading{
+	overflow: hidden;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@keyframes color {
+  100%,
+  0% {
+    stroke: $red;
+  }
+  40% {
+    stroke: $blue;
+  }
+  66% {
+    stroke: $green;
+  }
+  80%,
+  90% {
+    stroke: $yellow;
+  }
+}

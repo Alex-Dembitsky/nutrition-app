@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-extrathin-webfont.eot');
+    src: url('../fonts/avertastd-extrathin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-extrathin-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-extrathin-webfont.woff') format('woff'),
+         url('../fonts/avertastd-extrathin-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-extrathin-webfont.svg#averta_stdextrathin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-extrathinitalic-webfont.eot');
+    src: url('../fonts/avertastd-extrathinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-extrathinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-extrathinitalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-extrathinitalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-extrathinitalic-webfont.svg#averta_stdextrathin_italic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-thin-webfont.eot');
+    src: url('../fonts/avertastd-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-thin-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-thin-webfont.woff') format('woff'),
+         url('../fonts/avertastd-thin-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-thin-webfont.svg#averta_stdthin') format('svg');
+    font-weight: 200;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-thinitalic-webfont.eot');
+    src: url('../fonts/avertastd-thinitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-thinitalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-thinitalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-thinitalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-thinitalic-webfont.svg#averta_stdthin_italic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-light-webfont.eot');
+    src: url('../fonts/avertastd-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-light-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-light-webfont.woff') format('woff'),
+         url('../fonts/avertastd-light-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-light-webfont.svg#averta_stdlight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-lightitalic-webfont.eot');
+    src: url('../fonts/avertastd-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-lightitalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-lightitalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-lightitalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-lightitalic-webfont.svg#averta_stdlight_italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-regular-webfont.eot');
+    src: url('../fonts/avertastd-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-regular-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-regular-webfont.woff') format('woff'),
+         url('../fonts/avertastd-regular-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-regular-webfont.svg#averta_stdregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-regularitalic-webfont.eot');
+    src: url('../fonts/avertastd-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-regularitalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-regularitalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-regularitalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-regularitalic-webfont.svg#averta_stdregular_italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-bold-webfont.eot');
+    src: url('../fonts/avertastd-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-bold-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-bold-webfont.woff') format('woff'),
+         url('../fonts/avertastd-bold-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-bold-webfont.svg#averta_stdbold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-bolditalic-webfont.eot');
+    src: url('../fonts/avertastd-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-bolditalic-webfont.svg#averta_stdbold_italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-semibold-webfont.eot');
+    src: url('../fonts/avertastd-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-semibold-webfont.woff') format('woff'),
+         url('../fonts/avertastd-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-semibold-webfont.svg#averta_stdsemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-semibolditalic-webfont.eot');
+    src: url('../fonts/avertastd-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-semibolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-semibolditalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-semibolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-semibolditalic-webfont.svg#averta_stdsemibold_italic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-black-webfont.eot');
+    src: url('../fonts/avertastd-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-black-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-black-webfont.woff') format('woff'),
+         url('../fonts/avertastd-black-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-black-webfont.svg#averta_stdblack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-blackitalic-webfont.eot');
+    src: url('../fonts/avertastd-blackitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-blackitalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-blackitalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-blackitalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-blackitalic-webfont.svg#averta_stdblack_italic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-extrabold-webfont.eot');
+    src: url('../fonts/avertastd-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-extrabold-webfont.woff') format('woff'),
+         url('../fonts/avertastd-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-extrabold-webfont.svg#averta_stdextrabold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'averta';
+    src: url('../fonts/avertastd-extrabolditalic-webfont.eot');
+    src: url('../fonts/avertastd-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/avertastd-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/avertastd-extrabolditalic-webfont.woff') format('woff'),
+         url('../fonts/avertastd-extrabolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/avertastd-extrabolditalic-webfont.svg#averta_stdextrabold_italic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.eot');
+    src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff'),
+         url('../fonts/montserrat-light-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-light-webfont.svg#montserratlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

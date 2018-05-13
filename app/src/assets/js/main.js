@@ -1,0 +1,15 @@
+import './modules/loader';
+import './modules/isMobile';
+import './modules/ie11detection';
+import './modules/skrollr';
+import './modules/slick';
+import './modules/parallax';
+import './modules/navigation'
+import './modules/select';
+import './modules/pagination';
+import './modules/accordion';
+import './modules/tabs';
+import './modules/dropdowns';
+import './modules/formula-calories';
+import './modules/popup';
+import './modules/animation-order-matters';

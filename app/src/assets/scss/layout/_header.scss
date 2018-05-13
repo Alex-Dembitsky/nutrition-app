@@ -1,0 +1,74 @@
+.header {
+	background: #fff;
+	height: $header-height;
+	font-size: 20px;
+	line-height: 30px;
+	padding: ($header-height - 30px)/2 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: $font-weight-semibold;
+	position: relative;
+	left: 0;
+	right: 0;
+	z-index: 101;
+	top: 0;
+	opacity: 0;
+	transition: opacity 0.3s;
+
+	.intro.skrollable-after ~ & {
+		position: fixed;
+		opacity: 1;
+	}
+	ul {
+		display: flex;
+		@extend %listreset;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	li {
+		/* flex: 1; */
+		text-align: center;
+	}
+	a {
+		color: #9b9b9b;
+		transition: color 0.3s easy-in-out;
+		padding: 0 5px;
+		display: block;
+	}
+	.active a,
+	a:hover {
+		text-decoration: none;
+		color: $color-blue;
+	}
+	.ingredients.active a,
+	.ingredients a:hover {
+		color: $color-green;
+	}
+	.packaging.active a,
+	.packaging a:hover {
+		color: $color-yellow;
+	}
+
+	@include media('<tablet') {
+		height: auto;
+		display: none;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 0;
+		ul {
+			justify-content: center;
+		}
+		a {
+			padding: 10px;
+		}
+	}
+	.mobile-device & {
+		position: fixed;
+		opacity: 1;
+		z-index: 25;
+		border-bottom: 2px solid $form-border-color;
+	}
+	@media (max-height: 399px) and (max-width: 560px) {
+		display: none;
+	}
+}

@@ -1,0 +1,115 @@
+/*  =========================================================================
+    include-media library configuration overrides (optional)
+    ========================================================================= */
+
+$breakpoints: (
+    'phone': 480px,
+    'tablet': 767px,
+    'desktop': 1024px,
+    'widescreen': 1270px
+);
+
+$media-expressions: (
+    'screen': 'screen',
+    'print': 'print',
+    'handheld': 'handheld',
+    'landscape': '(orientation: landscape)',
+    'portrait': '(orientation: portrait)',
+    'retina2x': '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)',
+    'retina3x': '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi), (min-resolution: 3dppx)'
+);
+
+
+/*  =========================================================================
+    screen sizes
+    ========================================================================= */
+
+$body-min-width: 320px;
+
+$max-width: 1280px;
+
+
+/*  =========================================================================
+    base theme colors
+    ========================================================================= */
+
+$color-black: #000; //Black
+$color-white: #fff; //White
+$color-blue: #06C1F8;
+
+$text-color: #1F2952;
+$bg-color: #eaf9ff;
+
+$primary-color: $text-color;
+$secondary-color: #C7C9D4;
+
+$color-blue-int: #EAF9FF;
+$color-blue-bg: #F3FCFF;
+
+$color-green: #00DC92;
+$color-green-int: #E5F6F0;
+$color-green-bg: #F3FFFB;
+
+$color-yellow: #FFBA00;
+$color-yellow-int: #F9D77D;
+$color-yellow-bg: #FFF7E2;
+
+$color-red: #F54370;
+$color-red-bg: #FFF8F9;
+$color-red-hover: #E51247;
+
+$add-color: #4A7FFB;
+$add-color-1: #A65DFB;
+$add-color-2: #00A5B3;
+$add-color-3: #EAEAEA;
+
+$carbohydrate: #d35df9;
+$fats: #4a7ffb;
+$protein: $color-green;
+
+
+/*  =========================================================================
+    typography
+    ========================================================================= */
+
+$base-font-family: 'averta', Arial, Helvetica, sans-serif;
+$lt-font-family: 'montserratlight', Arial, Helvetica, sans-serif;
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$text-color: $primary-color;
+$link-color: $color-blue;
+
+$font-size-l: 21px;
+$line-height-l: 1.429;
+
+$font-size-xl: 28px;
+
+$font-size-xxl: 42px;
+$line-height-xxl: 1.143;
+
+$font-size-h0: 100px;
+$font-size-h1: 64px;
+$font-size-h2: 42px;
+$font-size-h3: 20px;
+$font-size-h4: 14px;
+$font-size-h5: 12px;
+$font-size-h6: 10px;
+
+$font-weight-extrathin: 100;
+$font-weight-thin: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+$header-height: 86px;
+
+
+/*  =========================================================================
+    forms
+    ========================================================================= */
+
+$form-border-color: $secondary-color;
+$form-bg-color: #f2fcff;

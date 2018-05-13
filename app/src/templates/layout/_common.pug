@@ -1,0 +1,17 @@
+include ../mixins/_mixins.pug
+block vars
+
+doctype html
+
+html(lang="en", class="loading")
+    include ../global/_head.pug
+
+    body(class=bodyClass)
+        block body
+
+        .page-wrapper
+
+            main.page-main(role="main")
+                block main
+            
+        include ../global/_scripts.pug

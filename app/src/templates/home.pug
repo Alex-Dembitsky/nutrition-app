@@ -1,0 +1,18 @@
+extends layout/_common.pug
+
+block vars
+    - var bodyClass = ''
+    - var pageName = 'home.html'
+
+block body
+    //- place optional body content here if needed
+
+block main
+    //- place body content here
+    include components/_intro.pug
+    include components/_facts.pug
+    include components/_ingredients.pug
+    include components/_packaging.pug
+    include components/_ways.pug
+
+    include global/_header.pug

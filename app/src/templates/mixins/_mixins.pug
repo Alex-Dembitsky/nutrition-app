@@ -1,0 +1,28 @@
+//- Usage:
+//-
+//-     var navList = [
+//-         {url: 'home.html', name: 'Home'}
+//-         , {url: 'about.html', name: 'About'}
+//-         , {url: 'blog.html', name: 'Blog'}
+//-         , {url: 'contact.html', name: 'Contact'}
+//-     ];
+
+//- +createActiveNav('main', navList)
+
+mixin createNav(className, navList)
+    nav(class='c-nav-'+className)
+        ul(class='c-nav-'+className+'__list')
+            each i in navList
+                li(class='c-nav-'+className+'__item')
+                    a(class='c-nav-'+className+'__link' href=i.url)= i.name
+
+
+//- Usage:
+//- +createActiveNav('main', navList)
+
+mixin createActiveNav(className, navList)
+    nav(class='c-nav-'+className)
+        ul(class='c-nav-'+className+'__list')
+            each i in navList
+                li(class='c-nav-'+className+'__item' class={active: i.url == pageName})
+                    a(class='c-nav-'+className+'__link' href=i.url)= i.name

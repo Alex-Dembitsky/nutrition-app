@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: $body-min-width;
+    background-color: $bg-color;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: $font-weight-regular;
+    color: $text-color;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.video-container-16x9 {
+    overflow: hidden;
+    position: relative;
+    padding-top: 56.25%; //16x9
+
+    .embed-responsive-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}
+
+.video-container-4x3 {
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    padding-top: 75%; //4x3
+
+    .embed-responsive-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}
+
+p.size-s,
+a.size-s {
+    font-size: #{$base-font-size * 0.75};
+}
+
+p.size-m,
+a.size-m { //default
+    font-size: $base-font-size;
+}
+
+p.size-l,
+a.size-l {
+    font-size: #{$base-font-size * 1.25};
+}
+
+p.size-xl,
+a.size-xl {
+    font-size: #{$base-font-size * 1.5};
+}
+
+input[type="submit"].size-s,
+button.size-s,
+a.button.size-s {
+    font-size: #{$base-font-size * 0.75};
+}
+
+input[type="submit"].size-m,
+button.size-m,
+a.button.size-m {
+    font-size: $base-font-size;
+}
+
+input[type="submit"].size-l,
+button.size-l,
+a.button.size-l {
+    font-size: #{$base-font-size * 1.25};
+}
+
+input[type="submit"].size-xl,
+button.size-xl,
+a.button.size-xl {
+    font-size: #{$base-font-size * 1.5};
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-justify {
+    text-align: justify;
+}
